@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.hss.dao.BlogDao">
+
+    <resultMap id="BlogResult" type="Blog">
+        <result property="id" column="id"/>
+        <result property="title" column="title"/>
+        <result property="summary" column="summary"/>
+        <result property="releaseDate" column="releaseDate"/>
+        <result property="releaseDateStr" column="releaseDate"/>
+        <result property="clickHit" column="clickHit"/>
+        <result property="replyHit" column="replyHit"/>
+        <result property="content" column="content"/>
+        <result property="keyWord" column="keyWord"/>
+        <association property="blogType" column="typeId" select="com.hss.dao.BlogTypeDao.getById"/>
+    </resultMap>
+
+    <select id="countList" resultMap="BlogResult">
+        SELECT DATE_FORMAT(releaseDate,"%Y年%m月") AS releaseDateStr,COUNT(*) AS blogCount FROM t_blog GROUP BY DATE_FORMAT(releaseDate,"%Y年%m月") ORDER BY DATE_FORMAT(releaseDate,"%Y年%m月") DESC;
+    </select>
+
+    <select id="list" parameterType="Map" resultMap="BlogResult">
+        SELECT  * FROM t_blog
+        <where>
+            <if test="title != null and title!='' ">
+                and title like #{title}
+            </if>
+            <if test="typeId != null and typeId!='' ">
+                and typeId=#{typeId}
+            </if>
+
+            <if test="releaseDateStr!=null and releaseDateStr !=''">
+                and DATE_FORMAT(releaseDate,"%Y年%m月")=#{releaseDateStr}
+            </if>
+        </where>
+        ORDER  BY  releaseDate DESC
+        <if test="start!=null and  size!=null">
+            limit #{start},#{size}
+        </if>
+    </select>
+
+    <select id="getTotal" parameterType="Map" resultType="Long" >
+        SELECT  count(*) FROM t_blog
+        <where>
+            <if test="title != null and title!='' ">
+                and title like #{title}
+            </if>
+            <if test="typeId != null and typeId!='' ">
+                and typeId=#{typeId}
+            </if>
+
+            <if test="releaseDateStr!=null and releaseDateStr !=''">
+                and DATE_FORMAT(releaseDate,"%Y年%m月")=#{releaseDateStr}
+            </if>
+
+        </where>
+    </select>
+
+    <select id="findById" parameterType="Integer" resultMap="BlogResult">
+        SELECT  * FROM t_blog WHERE id=#{id}
+    </select>
+
+    <update id="update" parameterType="Blog">
+        UPDATE t_blog
+        <set>
+                <!--修改内容-->
+                <if test="content!=null and content!=''">
+                content=#{content},
+                </if>
+                <!--修改内容-->
+                <if test="keyWord!=null and keyWord!=''">
+                    keyWord=#{keyWord},
+                </if>
+                <!--修改关键字-->
+                <if test="title!=null and title!=''">
+                    title=#{title},
+                </if>
+                <if test="blogType.id!=null">
+                  typeId=#{blogType.id},
+                </if>
+                <if test="summary!=null and summary!=''">
+                    summary=#{summary},
+                </if>
+                <if test="clickHit!=null">
+                    clickHit=#{clickHit},
+                </if>
+                <if test="replyHit!=null">
+                     replyHit=#{replyHit},
+                </if>
+
+        </set>
+        WHERE id=#{id}
+    </update>
+
+    <select id="getNextBlog" parameterType="Map" resultMap="BlogResult">
+        SELECT * FROM  t_blog
+        <where>
+            <if test="id!=null">
+                and id&gt;#{id}
+            </if>
+            <if test="typeId!=null">
+                and typeId= #{typeId}
+            </if>
+            <if test="releaseDateStr!=null">
+                and DATE_FORMAT(releaseDate,"%Y年%m月")=#{releaseDateStr}
+            </if>
+        </where>
+        ORDER BY releasedate ASC LIMIT 1
+    </select>
+
+    <select id="getPreBlog" parameterType="Map" resultMap="BlogResult">
+        SELECT * FROM  t_blog
+        <where>
+            <if test="id!=null">
+                and id&lt;#{id}
+            </if>
+            <if test="typeId!=null">
+                and typeId= #{typeId}
+            </if>
+            <if test="releaseDateStr!=null">
+                and DATE_FORMAT(releaseDate,"%Y年%m月")=#{releaseDateStr}
+            </if>
+        </where>
+        ORDER BY releasedate DESC LIMIT 1
+    </select>
+
+    <insert id="addBlog" parameterType="Blog" useGeneratedKeys="true" keyProperty="id">
+        INSERT  INTO  t_blog VALUES (null,#{title},#{summary},now(),0,0,#{content},#{blogType.id},#{keyWord});
+    </insert>
+
+    <delete id="deleteBlog" parameterType="Integer">
+        DELETE  FROM t_blog WHERE id=#{id}
+    </delete>
+
+</mapper>

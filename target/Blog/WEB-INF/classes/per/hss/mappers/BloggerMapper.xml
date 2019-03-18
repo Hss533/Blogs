@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.hss.dao.BloggerDao">
+
+    <resultMap id="BloggerResult" type="Blogger">
+        <result property="id" column="id"/>
+        <result property="userName" column="userName"/>
+        <result property="password" column="password"/>
+        <result property="profile" column="profile"/>
+        <result property="nickName" column="nickName"/>
+        <result property="sign" column="sign"/>
+        <result property="imageName" column="imageName"/>
+        <result property="isExit" column="isExit"/>
+        <association property="power" column="powerId" select="com.hss.dao.PowerDao.findById"/>
+    </resultMap>
+
+    <select id="find" parameterType="Map" resultMap="BloggerResult">
+        SELECT * FROM  t_blogger
+          <where>
+             <if test="blogger!=null">
+                 and userName=#{blogger.userName} and password=#{blogger.password}
+             </if>
+              <if test="userName!=null and userName!=''">
+                  and userName=#{userName}
+              </if>
+          </where>
+    </select>
+
+    <delete id="delete" parameterType="Integer" >
+       <if test="id!='' and id!=null">
+        DELETE FROM t_blogger WHERE  id=#{id}
+       </if>
+    </delete>
+
+    <update id="update" parameterType="Blogger">
+        UPDATE t_blogger
+        <set>
+            <if test="password !='' and password!=null">
+                password=#{password},
+            </if>
+            <if test="profile !='' and profile!=null">
+                profile=#{profile},
+            </if>
+            <if test="sign !='' and sign!=null">
+                sign=#{sign},
+            </if>
+            <if test="imageName !='' and imageName!=null">
+                imageName=#{imageName},
+            </if>
+            <if test="nickName !='' and nickName!=null">
+                nickName=#{nickName},
+            </if>
+        </set>
+    </update>
+
+    <insert id="add" parameterType="Blogger">
+        INSERT  INTO  t_blogger VALUES (null,#{userName},#{password},null,#{nickName},#{sign},#{imageName},1,#{power.id});
+    </insert>
+
+</mapper>

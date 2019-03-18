@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.hss.dao.LikeDao">
+    <resultMap id="LikeResult" type="like">
+        <result property="id" column="id"/>
+        <result property="articleId" column="articleId"/>
+        <result property="userIp" column="userIp"/>
+        <result property="status" column="status"/>
+    </resultMap>
+    <sql id="LikeSql"> id ,articleId,userIp,status</sql>
+    <insert id="add" parameterType="map">
+    INSERT  INTO t_like VALUES (null,#{articleId},#{Ip},1);
+    </insert>
+    <update id="update" parameterType="map">
+    UPDATE t_like SET status=#{status} where articleId=#{articleId} and userIp=#{Ip}
+    </update>
+    <select id="findByArtcileIdAndUserIp" parameterType="map" resultMap="LikeResult">
+    SELECT <include refid="LikeSql"/> FROM t_like WHERE articleId=#{articleId} and userIp=#{Ip}
+    </select>
+    <select id="findByArtcileId" resultMap="LikeResult" >
+     SELECT <include refid="LikeSql"/> FROM t_like WHERE articleId=#{articleId}
+    </select>
+</mapper>

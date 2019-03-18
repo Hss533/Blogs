@@ -1,0 +1,269 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<dataSource name="db_blog@localhost">
+  <database-model serializer="dbm" rdbms="MYSQL" format-version="4.4">
+    <root id="1"/>
+    <schema id="2" parent="1" name="db_blog">
+      <Current>1</Current>
+      <Visible>1</Visible>
+    </schema>
+    <schema id="3" parent="1" name="class"/>
+    <schema id="4" parent="1" name="db_csdn"/>
+    <schema id="5" parent="1" name="db_diary"/>
+    <schema id="6" parent="1" name="db_mybatis"/>
+    <schema id="7" parent="1" name="db_mybatislearn"/>
+    <schema id="8" parent="1" name="db_news"/>
+    <schema id="9" parent="1" name="db_qq"/>
+    <schema id="10" parent="1" name="db_shiro"/>
+    <schema id="11" parent="1" name="db_spring"/>
+    <schema id="12" parent="1" name="db_test"/>
+    <schema id="13" parent="1" name="db_testitem"/>
+    <schema id="14" parent="1" name="db_ttms"/>
+    <schema id="15" parent="1" name="db_ttms2"/>
+    <schema id="16" parent="1" name="headfirstmap"/>
+    <schema id="17" parent="1" name="hss"/>
+    <schema id="18" parent="1" name="information_schema"/>
+    <schema id="19" parent="1" name="jsplearn"/>
+    <schema id="20" parent="1" name="map"/>
+    <schema id="21" parent="1" name="mysql"/>
+    <schema id="22" parent="1" name="performance_schema"/>
+    <schema id="23" parent="1" name="studentinfo"/>
+    <schema id="24" parent="1" name="sys"/>
+    <schema id="25" parent="1" name="ttms"/>
+    <schema id="26" parent="1" name="db_girl"/>
+    <schema id="27" parent="1" name="db_seckill"/>
+    <schema id="28" parent="1" name="db_springlearn"/>
+    <schema id="29" parent="1" name="db_ssm"/>
+    <schema id="30" parent="1" name="db_mmall"/>
+    <schema id="31" parent="1" name="db_niukesql"/>
+    <schema id="32" parent="1" name="groupon_new"/>
+    <table id="33" parent="2" name="t_blog"/>
+    <table id="34" parent="2" name="t_blogger"/>
+    <table id="35" parent="2" name="t_blogtype"/>
+    <table id="36" parent="2" name="t_comment"/>
+    <table id="37" parent="2" name="t_like"/>
+    <table id="38" parent="2" name="t_link"/>
+    <table id="39" parent="2" name="t_userpower"/>
+    <column id="40" parent="33" name="id">
+      <Position>1</Position>
+      <DataType>int(11)|0</DataType>
+      <NotNull>1</NotNull>
+      <SequenceIdentity>1</SequenceIdentity>
+    </column>
+    <column id="41" parent="33" name="title">
+      <Position>2</Position>
+      <DataType>varchar(200)|0</DataType>
+    </column>
+    <column id="42" parent="33" name="summary">
+      <Position>3</Position>
+      <DataType>varchar(400)|0</DataType>
+    </column>
+    <column id="43" parent="33" name="releaseDate">
+      <Position>4</Position>
+      <DataType>datetime|0</DataType>
+    </column>
+    <column id="44" parent="33" name="clickHit">
+      <Position>5</Position>
+      <DataType>int(11)|0</DataType>
+      <DefaultExpression>&apos;0&apos;</DefaultExpression>
+    </column>
+    <column id="45" parent="33" name="replyHit">
+      <Position>6</Position>
+      <DataType>int(11)|0</DataType>
+      <DefaultExpression>&apos;0&apos;</DefaultExpression>
+    </column>
+    <column id="46" parent="33" name="content">
+      <Position>7</Position>
+      <DataType>text|0</DataType>
+    </column>
+    <column id="47" parent="33" name="typeId">
+      <Position>8</Position>
+      <DataType>int(11)|0</DataType>
+    </column>
+    <column id="48" parent="33" name="keyWord">
+      <Position>9</Position>
+      <DataType>varchar(200)|0</DataType>
+    </column>
+    <index id="49" parent="33" name="typeId">
+      <ColNames>typeId</ColNames>
+    </index>
+    <key id="50" parent="33" name="PRIMARY">
+      <NameSurrogate>1</NameSurrogate>
+      <ColNames>id</ColNames>
+      <Primary>1</Primary>
+    </key>
+    <foreign-key id="51" parent="33" name="1">
+      <ColNames>typeId</ColNames>
+      <RefSchemaName>db_blog</RefSchemaName>
+      <RefTableName>t_blogtype</RefTableName>
+      <RefColNames>id</RefColNames>
+      <OnDelete>set-null</OnDelete>
+    </foreign-key>
+    <column id="52" parent="34" name="id">
+      <Position>1</Position>
+      <DataType>int(11)|0</DataType>
+      <NotNull>1</NotNull>
+      <SequenceIdentity>1</SequenceIdentity>
+    </column>
+    <column id="53" parent="34" name="userName">
+      <Position>2</Position>
+      <DataType>varchar(50)|0</DataType>
+    </column>
+    <column id="54" parent="34" name="password">
+      <Position>3</Position>
+      <DataType>varchar(100)|0</DataType>
+    </column>
+    <column id="55" parent="34" name="profile">
+      <Position>4</Position>
+      <DataType>text|0</DataType>
+    </column>
+    <column id="56" parent="34" name="nickName">
+      <Position>5</Position>
+      <DataType>varchar(255)|0</DataType>
+    </column>
+    <column id="57" parent="34" name="sign">
+      <Position>6</Position>
+      <DataType>varchar(100)|0</DataType>
+    </column>
+    <column id="58" parent="34" name="imageName">
+      <Position>7</Position>
+      <DataType>varchar(100)|0</DataType>
+    </column>
+    <column id="59" parent="34" name="isexit">
+      <Position>8</Position>
+      <DataType>int(11)|0</DataType>
+    </column>
+    <column id="60" parent="34" name="power">
+      <Position>9</Position>
+      <DataType>int(11)|0</DataType>
+    </column>
+    <index id="61" parent="34" name="t_blogger_t_userpower_id_fk">
+      <ColNames>power</ColNames>
+    </index>
+    <key id="62" parent="34" name="PRIMARY">
+      <NameSurrogate>1</NameSurrogate>
+      <ColNames>id</ColNames>
+      <Primary>1</Primary>
+    </key>
+    <foreign-key id="63" parent="34" name="t_blogger_t_userpower_id_fk">
+      <ColNames>power</ColNames>
+      <RefSchemaName>db_blog</RefSchemaName>
+      <RefTableName>t_userpower</RefTableName>
+      <RefColNames>id</RefColNames>
+    </foreign-key>
+    <column id="64" parent="35" name="id">
+      <Position>1</Position>
+      <DataType>int(11)|0</DataType>
+      <NotNull>1</NotNull>
+      <SequenceIdentity>1</SequenceIdentity>
+    </column>
+    <column id="65" parent="35" name="typeName">
+      <Position>2</Position>
+      <DataType>varchar(30)|0</DataType>
+    </column>
+    <column id="66" parent="35" name="orderNo">
+      <Position>3</Position>
+      <DataType>int(11)|0</DataType>
+    </column>
+    <key id="67" parent="35" name="PRIMARY">
+      <NameSurrogate>1</NameSurrogate>
+      <ColNames>id</ColNames>
+      <Primary>1</Primary>
+    </key>
+    <column id="68" parent="36" name="id">
+      <Position>1</Position>
+      <DataType>int(11)|0</DataType>
+      <NotNull>1</NotNull>
+      <SequenceIdentity>1</SequenceIdentity>
+    </column>
+    <column id="69" parent="36" name="userIp">
+      <Position>2</Position>
+      <DataType>varchar(30)|0</DataType>
+    </column>
+    <column id="70" parent="36" name="blogId">
+      <Position>3</Position>
+      <DataType>int(11)|0</DataType>
+    </column>
+    <column id="71" parent="36" name="content">
+      <Position>4</Position>
+      <DataType>varchar(1000)|0</DataType>
+    </column>
+    <column id="72" parent="36" name="commentDate">
+      <Position>5</Position>
+      <DataType>datetime|0</DataType>
+    </column>
+    <column id="73" parent="36" name="state">
+      <Position>6</Position>
+      <Comment>评论审核是否通过</Comment>
+      <DataType>int(11)|0</DataType>
+    </column>
+    <key id="74" parent="36" name="PRIMARY">
+      <NameSurrogate>1</NameSurrogate>
+      <ColNames>id</ColNames>
+      <Primary>1</Primary>
+    </key>
+    <column id="75" parent="37" name="id">
+      <Position>1</Position>
+      <DataType>int(11)|0</DataType>
+      <NotNull>1</NotNull>
+      <SequenceIdentity>1</SequenceIdentity>
+    </column>
+    <column id="76" parent="37" name="articleId">
+      <Position>2</Position>
+      <DataType>varchar(255)|0</DataType>
+    </column>
+    <column id="77" parent="37" name="userIp">
+      <Position>3</Position>
+      <DataType>varchar(255)|0</DataType>
+    </column>
+    <column id="78" parent="37" name="status">
+      <Position>4</Position>
+      <DataType>int(11)|0</DataType>
+    </column>
+    <index id="79" parent="37" name="s">
+      <ColNames>articleId</ColNames>
+    </index>
+    <key id="80" parent="37" name="PRIMARY">
+      <NameSurrogate>1</NameSurrogate>
+      <ColNames>id</ColNames>
+      <Primary>1</Primary>
+    </key>
+    <column id="81" parent="38" name="id">
+      <Position>1</Position>
+      <DataType>int(11)|0</DataType>
+      <NotNull>1</NotNull>
+      <SequenceIdentity>1</SequenceIdentity>
+    </column>
+    <column id="82" parent="38" name="linkName">
+      <Position>2</Position>
+      <DataType>varchar(100)|0</DataType>
+    </column>
+    <column id="83" parent="38" name="linkUrl">
+      <Position>3</Position>
+      <DataType>varchar(100)|0</DataType>
+    </column>
+    <column id="84" parent="38" name="orderNum">
+      <Position>4</Position>
+      <DataType>int(11)|0</DataType>
+    </column>
+    <key id="85" parent="38" name="PRIMARY">
+      <NameSurrogate>1</NameSurrogate>
+      <ColNames>id</ColNames>
+      <Primary>1</Primary>
+    </key>
+    <column id="86" parent="39" name="id">
+      <Position>1</Position>
+      <DataType>int(11)|0</DataType>
+      <NotNull>1</NotNull>
+      <SequenceIdentity>1</SequenceIdentity>
+    </column>
+    <column id="87" parent="39" name="power">
+      <Position>2</Position>
+      <DataType>varchar(20)|0</DataType>
+    </column>
+    <key id="88" parent="39" name="PRIMARY">
+      <NameSurrogate>1</NameSurrogate>
+      <ColNames>id</ColNames>
+      <Primary>1</Primary>
+    </key>
+  </database-model>
+</dataSource>
