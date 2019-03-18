@@ -7,53 +7,24 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="c51a0a55-5ad7-4456-9f49-d177e9f2f3f0" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/hss/dao/LikeDao.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/hss/entity/Like.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/hss/util/RredisUtil.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/per/hss/mappers/LikeMapper.xml" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/webapp/blog.ico" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/webapp/index.jsp" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/Blog/blog.ico" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/hss/service/impl/BlogServiceImpl.class" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/Blog/WEB-INF/classes/com/hss/controller/BlogController.class" afterPath="$PROJECT_DIR$/target/Blog/WEB-INF/classes/com/hss/controller/BlogController.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/Blog/WEB-INF/classes/com/hss/controller/CommentController.class" afterPath="$PROJECT_DIR$/target/Blog/WEB-INF/classes/com/hss/controller/CommentController.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/Blog/WEB-INF/classes/com/hss/controller/IndexController.class" afterPath="$PROJECT_DIR$/target/Blog/WEB-INF/classes/com/hss/controller/IndexController.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/Blog/WEB-INF/classes/com/hss/init/InitComponent.class" afterPath="$PROJECT_DIR$/target/Blog/WEB-INF/classes/com/hss/init/InitComponent.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/Blog/WEB-INF/classes/com/hss/service/BlogService.class" afterPath="$PROJECT_DIR$/target/Blog/WEB-INF/classes/com/hss/service/BlogService.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/Blog/WEB-INF/classes/com/hss/service/impl/BlogServiceImpl.class" afterPath="$PROJECT_DIR$/target/Blog/WEB-INF/classes/com/hss/service/impl/BlogServiceImpl.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/hss/controller/BlogController.class" afterPath="$PROJECT_DIR$/target/classes/com/hss/controller/BlogController.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/hss/controller/CommentController.class" afterPath="$PROJECT_DIR$/target/classes/com/hss/controller/CommentController.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/hss/controller/IndexController.class" afterPath="$PROJECT_DIR$/target/classes/com/hss/controller/IndexController.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/hss/init/InitComponent.class" afterPath="$PROJECT_DIR$/target/classes/com/hss/init/InitComponent.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/hss/service/BlogService.class" afterPath="$PROJECT_DIR$/target/classes/com/hss/service/BlogService.class" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/Blog/WEB-INF/classes/applicationContext.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/Blog/WEB-INF/classes/com/hss/controller/IndexController.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/Blog/WEB-INF/classes/com/hss/service/BlogService.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/Blog/WEB-INF/classes/per/hss/mappers/BlogMapper.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/Blog/WEB-INF/lib/commons-pool2-2.3.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/Blog/WEB-INF/lib/jedis-2.7.3.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/Blog/WEB-INF/lib/shiro-crypto-core-1.4.0.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/Blog/WEB-INF/lib/shiro-crypto-hash-1.4.0.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/Blog/WEB-INF/lib/spring-data-commons-2.1.5.RELEASE.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/Blog/WEB-INF/lib/spring-oxm-5.1.5.RELEASE.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/Blog/admin/blogManager.jsp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/Blog/admin/modify.jsp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/Blog/foreground/blog/view.jsp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/Blog/foreground/commom/head.jsp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/Blog/foreground/commom/rigth.jsp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/Blog/mainTemp.jsp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/Blog/static/share/bilibilli.png" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pom.xml" afterPath="$PROJECT_DIR$/pom.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/hss/controller/BlogController.java" afterPath="$PROJECT_DIR$/src/main/java/com/hss/controller/BlogController.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/hss/controller/CommentController.java" afterPath="$PROJECT_DIR$/src/main/java/com/hss/controller/CommentController.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/hss/controller/IndexController.java" afterPath="$PROJECT_DIR$/src/main/java/com/hss/controller/IndexController.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/hss/init/InitComponent.java" afterPath="$PROJECT_DIR$/src/main/java/com/hss/init/InitComponent.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/hss/realm/MyRealm.java" afterPath="$PROJECT_DIR$/src/main/java/com/hss/realm/MyRealm.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/hss/service/BlogService.java" afterPath="$PROJECT_DIR$/src/main/java/com/hss/service/BlogService.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/hss/service/impl/BlogServiceImpl.java" afterPath="$PROJECT_DIR$/src/main/java/com/hss/service/impl/BlogServiceImpl.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/resources/applicationContext.xml" afterPath="$PROJECT_DIR$/src/main/resources/applicationContext.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/resources/per/hss/mappers/BlogMapper.xml" afterPath="$PROJECT_DIR$/src/main/resources/per/hss/mappers/BlogMapper.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/admin/blogManager.jsp" afterPath="$PROJECT_DIR$/src/main/webapp/admin/blogManager.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/admin/modify.jsp" afterPath="$PROJECT_DIR$/src/main/webapp/admin/modify.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/admin/writeBlog.jsp" afterPath="$PROJECT_DIR$/src/main/webapp/admin/writeBlog.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/foreground/blog/view.jsp" afterPath="$PROJECT_DIR$/src/main/webapp/foreground/blog/view.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/foreground/commom/head.jsp" afterPath="$PROJECT_DIR$/src/main/webapp/foreground/commom/head.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/foreground/commom/menu.jsp" afterPath="$PROJECT_DIR$/src/main/webapp/foreground/commom/menu.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/foreground/commom/rigth.jsp" afterPath="$PROJECT_DIR$/src/main/webapp/foreground/commom/rigth.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/mainTemp.jsp" afterPath="$PROJECT_DIR$/src/main/webapp/mainTemp.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/Blog/WEB-INF/classes/applicationContext.xml" afterPath="$PROJECT_DIR$/target/Blog/WEB-INF/classes/applicationContext.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/Blog/WEB-INF/classes/per/hss/mappers/BlogMapper.xml" afterPath="$PROJECT_DIR$/target/Blog/WEB-INF/classes/per/hss/mappers/BlogMapper.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/Blog/admin/blogManager.jsp" afterPath="$PROJECT_DIR$/target/Blog/admin/blogManager.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/Blog/admin/modify.jsp" afterPath="$PROJECT_DIR$/target/Blog/admin/modify.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/Blog/foreground/blog/view.jsp" afterPath="$PROJECT_DIR$/target/Blog/foreground/blog/view.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/Blog/foreground/commom/head.jsp" afterPath="$PROJECT_DIR$/target/Blog/foreground/commom/head.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/Blog/foreground/commom/rigth.jsp" afterPath="$PROJECT_DIR$/target/Blog/foreground/commom/rigth.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/Blog/mainTemp.jsp" afterPath="$PROJECT_DIR$/target/Blog/mainTemp.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/applicationContext.xml" afterPath="$PROJECT_DIR$/target/classes/applicationContext.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/per/hss/mappers/BlogMapper.xml" afterPath="$PROJECT_DIR$/target/classes/per/hss/mappers/BlogMapper.xml" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -104,7 +75,7 @@
         <entry file="file://$PROJECT_DIR$/src/main/webapp/foreground/blog/view.jsp">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="1528">
-              <caret line="66" column="52" lean-forward="true" selection-start-line="66" selection-start-column="52" selection-end-line="66" selection-end-column="52" />
+              <caret line="66" column="52" lean-forward="false" selection-start-line="66" selection-start-column="52" selection-end-line="66" selection-end-column="52" />
               <folding />
             </state>
           </provider>
@@ -120,11 +91,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="menu.jsp" pinned="false" current-in-tab="true">
+      <file leaf-file-name="menu.jsp" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/webapp/foreground/commom/menu.jsp">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="405">
-              <caret line="15" column="24" lean-forward="true" selection-start-line="15" selection-start-column="24" selection-end-line="15" selection-end-column="24" />
+              <caret line="15" column="24" lean-forward="false" selection-start-line="15" selection-start-column="24" selection-end-line="15" selection-end-column="24" />
               <folding />
             </state>
           </provider>
@@ -135,6 +106,16 @@
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="27">
               <caret line="47" column="16" lean-forward="false" selection-start-line="47" selection-start-column="16" selection-end-line="47" selection-end-column="16" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="pom.xml" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/pom.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="186">
+              <caret line="57" column="39" lean-forward="false" selection-start-line="57" selection-start-column="39" selection-end-line="57" selection-end-column="39" />
               <folding />
             </state>
           </provider>
@@ -154,7 +135,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>openLinkAddDialog</find>
       <find>dd</find>
       <find>add</find>
       <find>boolean add</find>
@@ -184,6 +164,7 @@
       <find>修改</find>
       <find>incrementScore</find>
       <find>alert</find>
+      <find>core</find>
     </findStrings>
     <replaceStrings>
       <replace />
@@ -242,7 +223,6 @@
         <option value="$PROJECT_DIR$/src/main/webapp/admin/blogManager.jsp" />
         <option value="$PROJECT_DIR$/src/main/resources/applicationContext.xml" />
         <option value="$PROJECT_DIR$/src/main/java/com/hss/util/RredisUtil.java" />
-        <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/src/test/Test.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/hss/entity/Like.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/hss/service/BlogService.java" />
@@ -255,6 +235,7 @@
         <option value="$PROJECT_DIR$/src/main/webapp/foreground/blog/view.jsp" />
         <option value="$PROJECT_DIR$/src/main/webapp/admin/writeBlog.jsp" />
         <option value="$PROJECT_DIR$/src/main/webapp/foreground/commom/menu.jsp" />
+        <option value="$PROJECT_DIR$/pom.xml" />
       </list>
     </option>
   </component>
@@ -957,7 +938,7 @@
       <workItem from="1550718110511" duration="2397000" />
       <workItem from="1551526543969" duration="827000" />
       <workItem from="1551941050882" duration="9198000" />
-      <workItem from="1552797151716" duration="36955000" />
+      <workItem from="1552797151716" duration="37700000" />
     </task>
     <servers />
   </component>
@@ -994,7 +975,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="412850000" />
+    <option name="totallyTimeSpent" value="413595000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -1007,7 +988,6 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-9" y="-9" width="1938" height="1048" extended-state="6" />
-    <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="true" content_ui="tabs" />
@@ -1027,7 +1007,7 @@
       <window_info id="Java Enterprise" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32982457" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.22860493" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.4384525" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Spring" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32928178" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32865497" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.21682848" sideWeight="0.5" order="6" side_tool="false" content_ui="combo" />
@@ -1247,13 +1227,13 @@
         <state relative-caret-position="184">
           <caret line="24" column="17" lean-forward="false" selection-start-line="24" selection-start-column="17" selection-end-line="24" selection-end-column="17" />
           <folding>
-            <marker date="1552833087085" expanded="true" signature="922:1105" ph="SELECT DATE_... t_blog" />
-            <marker date="1552833087085" expanded="true" signature="2395:2431" ph="SELECT * FRO... t_blog" />
-            <marker date="1552833087085" expanded="true" signature="2501:3444" ph="UPDATE t_blo... " />
-            <marker date="1552833087085" expanded="true" signature="3541:3947" ph="SELECT * FRO... t_blog" />
-            <marker date="1552833087085" expanded="true" signature="4043:4450" ph="SELECT * FRO... t_blog" />
-            <marker date="1552833087085" expanded="true" signature="4562:4663" ph="INSERT INTO t_blog" />
-            <marker date="1552833087085" expanded="true" signature="4741:4775" ph="DELETE FROM " />
+            <marker date="1552895936123" expanded="true" signature="922:1105" ph="SELECT DATE_... t_blog" />
+            <marker date="1552895936123" expanded="true" signature="2395:2431" ph="SELECT * FRO... t_blog" />
+            <marker date="1552895936123" expanded="true" signature="2501:3444" ph="UPDATE t_blo... " />
+            <marker date="1552895936123" expanded="true" signature="3541:3947" ph="SELECT * FRO... t_blog" />
+            <marker date="1552895936123" expanded="true" signature="4043:4450" ph="SELECT * FRO... t_blog" />
+            <marker date="1552895936123" expanded="true" signature="4562:4663" ph="INSERT INTO t_blog" />
+            <marker date="1552895936123" expanded="true" signature="4741:4775" ph="DELETE FROM " />
           </folding>
         </state>
       </provider>
@@ -1316,7 +1296,7 @@
         <state relative-caret-position="1134">
           <caret line="42" column="48" lean-forward="true" selection-start-line="42" selection-start-column="48" selection-end-line="42" selection-end-column="48" />
           <folding>
-            <marker date="1552835941222" expanded="true" signature="1863:1873" ph="..." />
+            <marker date="1552895936153" expanded="true" signature="1863:1873" ph="..." />
           </folding>
         </state>
       </provider>
@@ -1361,14 +1341,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="318">
-          <caret line="291" column="17" lean-forward="false" selection-start-line="291" selection-start-column="17" selection-end-line="291" selection-end-column="17" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/hss/util/RredisUtil.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="265">
@@ -1392,22 +1364,22 @@
         <state relative-caret-position="351">
           <caret line="13" column="21" lean-forward="false" selection-start-line="13" selection-start-column="21" selection-end-line="13" selection-end-column="21" />
           <folding>
-            <element signature="e#170#171#0" expanded="true" />
-            <element signature="e#195#196#0" expanded="true" />
-            <element signature="e#228#229#0" expanded="true" />
-            <element signature="e#256#257#0" expanded="true" />
-            <element signature="e#292#293#0" expanded="true" />
-            <element signature="e#324#325#0" expanded="true" />
-            <element signature="e#374#375#0" expanded="true" />
-            <element signature="e#416#417#0" expanded="true" />
-            <element signature="e#449#450#0" expanded="true" />
-            <element signature="e#478#479#0" expanded="true" />
-            <element signature="e#522#523#0" expanded="true" />
-            <element signature="e#558#559#0" expanded="true" />
-            <element signature="e#588#589#0" expanded="true" />
-            <element signature="e#617#618#0" expanded="true" />
-            <element signature="e#658#659#0" expanded="true" />
-            <element signature="e#694#695#0" expanded="true" />
+            <element signature="e#170#171#0" expanded="false" />
+            <element signature="e#195#196#0" expanded="false" />
+            <element signature="e#228#229#0" expanded="false" />
+            <element signature="e#256#257#0" expanded="false" />
+            <element signature="e#292#293#0" expanded="false" />
+            <element signature="e#324#325#0" expanded="false" />
+            <element signature="e#374#375#0" expanded="false" />
+            <element signature="e#416#417#0" expanded="false" />
+            <element signature="e#449#450#0" expanded="false" />
+            <element signature="e#478#479#0" expanded="false" />
+            <element signature="e#522#523#0" expanded="false" />
+            <element signature="e#558#559#0" expanded="false" />
+            <element signature="e#588#589#0" expanded="false" />
+            <element signature="e#617#618#0" expanded="false" />
+            <element signature="e#658#659#0" expanded="false" />
+            <element signature="e#694#695#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -1475,10 +1447,10 @@
         <state relative-caret-position="-21">
           <caret line="7" column="57" lean-forward="true" selection-start-line="7" selection-start-column="57" selection-end-line="7" selection-end-column="57" />
           <folding>
-            <marker date="1552880248142" expanded="true" signature="575:629" ph="INSERT INTO t_like" />
-            <marker date="1552880248142" expanded="true" signature="694:774" ph="UPDATE t_lik... " />
-            <marker date="1552880248142" expanded="true" signature="879:970" ph="SELECT FROM t_like" />
-            <marker date="1552880248142" expanded="true" signature="1048:1122" ph="SELECT FROM t_like" />
+            <marker date="1552895936133" expanded="true" signature="575:629" ph="INSERT INTO t_like" />
+            <marker date="1552895936133" expanded="true" signature="694:774" ph="UPDATE t_lik... " />
+            <marker date="1552895936133" expanded="true" signature="879:970" ph="SELECT FROM t_like" />
+            <marker date="1552895936133" expanded="true" signature="1048:1122" ph="SELECT FROM t_like" />
           </folding>
         </state>
       </provider>
@@ -1504,7 +1476,7 @@
         <state relative-caret-position="243">
           <caret line="9" column="0" lean-forward="false" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
           <folding>
-            <element signature="imports" expanded="true" />
+            <element signature="imports" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -1551,7 +1523,7 @@
     <entry file="file://$PROJECT_DIR$/src/main/webapp/foreground/blog/view.jsp">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1528">
-          <caret line="66" column="52" lean-forward="true" selection-start-line="66" selection-start-column="52" selection-end-line="66" selection-end-column="52" />
+          <caret line="66" column="52" lean-forward="false" selection-start-line="66" selection-start-column="52" selection-end-line="66" selection-end-column="52" />
           <folding />
         </state>
       </provider>
@@ -1567,7 +1539,15 @@
     <entry file="file://$PROJECT_DIR$/src/main/webapp/foreground/commom/menu.jsp">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="405">
-          <caret line="15" column="24" lean-forward="true" selection-start-line="15" selection-start-column="24" selection-end-line="15" selection-end-column="24" />
+          <caret line="15" column="24" lean-forward="false" selection-start-line="15" selection-start-column="24" selection-end-line="15" selection-end-column="24" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="186">
+          <caret line="57" column="39" lean-forward="false" selection-start-line="57" selection-start-column="39" selection-end-line="57" selection-end-column="39" />
           <folding />
         </state>
       </provider>
