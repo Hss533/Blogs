@@ -44,7 +44,7 @@ public class BlogIndex
         IndexWriter writer=new IndexWriter(dir,indexWriterConfig);
         return writer;
     }
-    //添加索引 😭 ✌
+    //添加索引
     public void addIndex(Blog blog) throws  Exception
     {
         //stringField是不会用到分词的
@@ -76,7 +76,6 @@ public class BlogIndex
         writer.updateDocument(new Term("id",String.valueOf(blog.getId())), doc);
         writer.close();
     }
-    //??这块有点问题嘻嘻嘻嘻
     //查询
     public List<Blog> searchBlog(String q) throws  Exception
     {

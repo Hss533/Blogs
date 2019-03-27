@@ -109,4 +109,7 @@
 		<constructor-arg index="0" value="127.0.0.1"/>
 		<constructor-arg index="1" value="6379"/>
 	</bean>
+
+	<!--添加定时器-->
+	<bean id="schedulerFactoryBean" class="org.springframework.scheduling.quartz.SchedulerFactoryBean" />
 </beans>
